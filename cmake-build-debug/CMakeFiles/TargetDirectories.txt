@@ -1,0 +1,3 @@
+G:/User/Documentos/UNIAT/Progra 3/ProyectoFinal/cmake-build-debug/CMakeFiles/ProyectoFinal.dir
+G:/User/Documentos/UNIAT/Progra 3/ProyectoFinal/cmake-build-debug/CMakeFiles/edit_cache.dir
+G:/User/Documentos/UNIAT/Progra 3/ProyectoFinal/cmake-build-debug/CMakeFiles/rebuild_cache.dir
