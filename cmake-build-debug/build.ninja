@@ -67,6 +67,24 @@ build CMakeFiles/ProyectoFinal.dir/package.cpp.obj: CXX_COMPILER__ProyectoFinal_
   OBJECT_DIR = CMakeFiles\ProyectoFinal.dir
   OBJECT_FILE_DIR = CMakeFiles\ProyectoFinal.dir
 
+build CMakeFiles/ProyectoFinal.dir/packageManager.cpp.obj: CXX_COMPILER__ProyectoFinal_unscanned_Debug G$:/User/Documentos/UNIAT/Progra$ 3/ProyectoFinal/packageManager.cpp || cmake_object_order_depends_target_ProyectoFinal
+  DEP_FILE = CMakeFiles\ProyectoFinal.dir\packageManager.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ProyectoFinal.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProyectoFinal.dir
+
+build CMakeFiles/ProyectoFinal.dir/queue.cpp.obj: CXX_COMPILER__ProyectoFinal_unscanned_Debug G$:/User/Documentos/UNIAT/Progra$ 3/ProyectoFinal/queue.cpp || cmake_object_order_depends_target_ProyectoFinal
+  DEP_FILE = CMakeFiles\ProyectoFinal.dir\queue.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ProyectoFinal.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProyectoFinal.dir
+
+build CMakeFiles/ProyectoFinal.dir/stack.cpp.obj: CXX_COMPILER__ProyectoFinal_unscanned_Debug G$:/User/Documentos/UNIAT/Progra$ 3/ProyectoFinal/stack.cpp || cmake_object_order_depends_target_ProyectoFinal
+  DEP_FILE = CMakeFiles\ProyectoFinal.dir\stack.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\ProyectoFinal.dir
+  OBJECT_FILE_DIR = CMakeFiles\ProyectoFinal.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target ProyectoFinal
@@ -75,7 +93,7 @@ build CMakeFiles/ProyectoFinal.dir/package.cpp.obj: CXX_COMPILER__ProyectoFinal_
 #############################################
 # Link the executable ProyectoFinal.exe
 
-build ProyectoFinal.exe: CXX_EXECUTABLE_LINKER__ProyectoFinal_Debug CMakeFiles/ProyectoFinal.dir/main.cpp.obj CMakeFiles/ProyectoFinal.dir/DDList.cpp.obj CMakeFiles/ProyectoFinal.dir/package.cpp.obj
+build ProyectoFinal.exe: CXX_EXECUTABLE_LINKER__ProyectoFinal_Debug CMakeFiles/ProyectoFinal.dir/main.cpp.obj CMakeFiles/ProyectoFinal.dir/DDList.cpp.obj CMakeFiles/ProyectoFinal.dir/package.cpp.obj CMakeFiles/ProyectoFinal.dir/packageManager.cpp.obj CMakeFiles/ProyectoFinal.dir/queue.cpp.obj CMakeFiles/ProyectoFinal.dir/stack.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\ProyectoFinal.dir

@@ -1,4 +1,4 @@
 H:\ProgramFiles\JetBrain\CLion\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=H:/ProgramFiles/JetBrain/CLion/bin/ninja/win/x64/ninja.exe -G Ninja -S "G:\User\Documentos\UNIAT\Progra 3\ProyectoFinal" -B "G:\User\Documentos\UNIAT\Progra 3\ProyectoFinal\cmake-build-debug"
--- Configuring done (0.8s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: G:/User/Documentos/UNIAT/Progra 3/ProyectoFinal/cmake-build-debug

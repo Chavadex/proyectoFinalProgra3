@@ -7,4 +7,10 @@ add_executable(ProyectoFinal main.cpp
         DDList.cpp
         DDList.h
         package.cpp
-        package.h)
+        package.h
+        packageManager.cpp
+        packageManager.h
+        queue.cpp
+        queue.h
+        stack.cpp
+        stack.h)
