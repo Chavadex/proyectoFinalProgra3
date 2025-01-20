@@ -5,7 +5,7 @@
 #ifndef AVLTREE_H
 #define AVLTREE_H
 #include <iostream>
-#include "cliente.h" // Incluimos la clase cliente.
+#include "cliente.h"
 
 struct Node {
     cliente customer;
@@ -79,7 +79,7 @@ private:
         else if (c.getId_user() > node->customer.getId_user())
             node->right = insertNode(node->right, c);
         else
-            return node; // No se permiten valores duplicados.
+            return node;
 
         node->height = 1 + maxHeight(getNodeHeight(node->left), getNodeHeight(node->right));
 
@@ -109,20 +109,20 @@ private:
         if (node == nullptr)
             return;
 
-        // Aumentamos el espacio antes de imprimir el nodo derecho
+
         space += 5;
 
-        // Imprimimos el subárbol derecho primero
+
         printTreeHelper(node->right, space);
 
-        // Imprimimos el ID del nodo con la cantidad de espacios adecuada
+
         std::cout << std::endl;
         for (int i = 5; i < space; i++)
-            std::cout << " ";  // Espacios para alinear el árbol
+            std::cout << " ";
 
         std::cout << node->customer.getId_user() << std::endl;
 
-        // Imprimimos el subárbol izquierdo
+
         printTreeHelper(node->left, space);
     }
 

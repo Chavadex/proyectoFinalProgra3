@@ -198,7 +198,7 @@ void addClient(AVLTree& tree) {
     int id_cliente;
 
     std::cout << "Ingrese el nombre del cliente: ";
-    std::cin.ignore(); // Limpiar el buffer
+    std::cin.ignore();
     std::getline(std::cin, nombre);
 
     std::cout << "Ingrese la direccion del cliente: ";
