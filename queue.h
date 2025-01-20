@@ -6,6 +6,8 @@
 #define QUEUE_H
 #include <iostream>
 #include <string>
+
+#include "DDList.h"
 #include "package.h"
 
 template<typename T>

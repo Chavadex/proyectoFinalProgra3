@@ -13,4 +13,10 @@ add_executable(ProyectoFinal main.cpp
         queue.cpp
         queue.h
         stack.cpp
-        stack.h)
+        stack.h
+        camion.cpp
+        camion.h
+        AVLTree.cpp
+        AVLTree.h
+        cliente.cpp
+        cliente.h)

@@ -6,6 +6,7 @@
 #define PACKAGE_H
 
 #include <string>
+#include <iostream>
 
 class package {
 public:
@@ -43,6 +44,8 @@ public:
     void setDeliveryDistance(float deliveryDistance);
 
     void setPackageID(int packageID);
+
+    void createPackage() ;
 
 private:
     int packageID;
