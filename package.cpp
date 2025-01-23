@@ -11,6 +11,9 @@ package::~package() {
         //Destructor
 }
 
+package::package() {}
+
+
 std::string package::getAddressRecipient() const {
     return addressRecipient;
 }

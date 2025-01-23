@@ -12,6 +12,7 @@ class package {
 public:
     package(int packageID, std::string addresRecipient, std::string recipient, std::string sender, std::string addresSender, int priorityLevel, int trackingCode, float deliveryDistance);
     ~package();
+    package();
 
     std::string getAddressRecipient() const;
 

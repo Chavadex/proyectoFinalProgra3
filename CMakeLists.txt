@@ -4,19 +4,15 @@ project(ProyectoFinal)
 set(CMAKE_CXX_STANDARD 17)
 
 add_executable(ProyectoFinal main.cpp
-        DDList.cpp
         DDList.h
         package.cpp
         package.h
         packageManager.cpp
         packageManager.h
-        queue.cpp
         queue.h
-        stack.cpp
         stack.h
-        camion.cpp
         camion.h
-        AVLTree.cpp
         AVLTree.h
         cliente.cpp
-        cliente.h)
+        cliente.h
+        HashTable.h)
