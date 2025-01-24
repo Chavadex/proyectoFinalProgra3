@@ -88,6 +88,66 @@ Esta clase e susada para lacenar de manera rapida los paquetes de acuerdo a su c
 
 En el caso de esta tabla Hash, si en algun caso se diera el hecho de que dos TrackingCode tuvieran el mismo index, se acumularan en el mismo, siendo mostrados ambos al momento de usar *display( )*.
 
+## Funciones de ordenamiento
+
+Estas estan incluidas en el *main.cpp* en la parte final del codigo. Su funcion es ordenar un grupo de paquetes de acuerdo a su nivel de prioridad (*PriorityLevel*). Cada uno de los paquetes creados se añade a un vector llamado -*packagesOrder*. Sus funciones principales son:
+
+- addPackagesOrder(packageOrder) : Llama a la función de *createPackage()* y añade el apquete creado al vector.
+- printPackages(*std::vector<packages>*) : Esta función requiere de un vector, que en este caso es el llamado packagesOrder, lo qu ehace es imprimir el ID y el nivel de prioridad de los paquetes dentro del vector.
+- MergeSort(*std::vector<packages>, int inicio, int final*) : Esta función requiere que se le pase el vector con lso elementos a ordenar y que se le indique el inciio y el final, el cual ya esta mencionado adecuadamente en la interfaz. Lo que hace es ordenar los valores del vector tomando su PriorityLevel mediante el metodo de Merge Sort elc ual divide los valores en mitades y los va acomodando.
+- QuickSort(*std::vector<packages>, int inicio, int final*) : Esta función requiere que se le pase el vector con los elementos a ordenar y que se le indique el incio y el final, el cual ya esta mencionado adecuadamente en la interfaz. Lo que hace es ordenar los valores del vector tomando su PriorityLevel mediante el metodo de Quick Sort el cual tambien divide el grupo de valores y los va ordenando pero esto con el uso de un pivote.
+
+
 ## Main.cpp
 
 Esta es la compilación de todas las clases creadas. Ya se ha explkicado previamente el funcionamiento de cada clase, por lo que aqui solo explicare el funcionamiento de la interfaz de *Main.cpp* y algunas funciones que fueron colocadas aqui mismo, como el ordenamiento.
+
+### Funcion *package createPackage( )*
+
+Esta función se usa para crear paquetes con todos sus valores, usado para aquellas estructuras de datos que requieren de un package.
+
+Así como una funcion mencionada anteriormente, esta función utiliza los *cin >>* y los *std:::getLine(std::cin, variable)* con el fin de leer la informacionmediante inputs sin que se salten algunas líneas.
+
+### Interfaz de usuario.
+
+Básicamente la interfaz esta compuesta por diferentes *Swicth* que de acuerdo a cada input van a ir seleccionando que área del programa se quiere usar. A continuación enlisto las opciones:
+
+1. Gestor de paquetes en camión.
+   1. Agregar paquete
+   2. Revisar el contenido del camión.
+   3. Retirar un paquete.
+   4. Vovler al menú.
+
+2. Fila de paquetes.
+    1. Agregar paquete a la fila.
+    2. Revisar paquetes en la fila.
+    3. Revisar el primer paquete que va a salir.
+    4. Revisar el ultimo paquete agregado.
+    5. Volver al menu
+     
+3. Pila de paquetes.
+    1. Agregar paquete a la fila.
+    2. Revisar paquetes en la fila.
+    3. Revisar el primer paquete que va a salir.
+    4. Revisar el ultimo paquete por entregar.
+    5. Volver al menu
+
+4. Registro de clientes mediante AVLTree.
+    1. Agregar cliente nuevo.
+    2. Revisar los clientes actuales.
+    3. Eliminar algun cliente.
+    4. Vovler al menu
+  
+5. Ordenamiento de paquetes mediante nivel de prioridad.
+    1. Revisar paquetes actuales.
+    2. Agregar nuevo paquete.
+    3. Ordenar paquetes mediante MergeSort.
+    4. Ordenar paquetes mediante QuickSort.
+    5. Salir al menu.
+
+6. Organizacion de pedidos mediante el codigo de rastreo.
+    1. Revisar los valores almacenados.
+    2. Insertar paquete.
+    3. Eliminar pauqte.
+    4. Salir al menú.
+  
