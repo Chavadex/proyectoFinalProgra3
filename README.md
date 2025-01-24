@@ -68,4 +68,26 @@ Utilizada para formar los objetos en una pila, es decir, encimados, respetando e
 - checkFisrtPackage( ) : Esta funcion revisara en la fila cual es el paquete que entro último de los paquetes actuales, es decir, el próximo en salir.
 - checkLastPackage( ) : Esta función revisara el primer package agregado, es decir, el ultimo en salir de los paquetes actuales.
 
+## Clase "*AVLTree.h*"
 
+Se usa esta clase para generar un arbol binario autobalanceable con el fin de poder almacenar de manera eficiente los clientes de la emrpesa de envíos. Se crea un nodo cque apunta a sus ramas hijas y contiene un objeto *cliente* el cual ya fue explciado anteriormente, con el fin de almacenarlos de acuerdo a su ID personal. Las principales funciones con las que cuenta son:
+
+- insert(*cliente*) : Esta función nos pide un objeto *cliente* para ser usada, lo que hace es que a su vez llama a la funcion *insertNode(root, cliente)* la cual realizara la tarea de la insercion el el ALVTree.
+- printTree( ) : Esta funcion imprime en consola el arbol actual con los datos con los que cuentem ya en su estado balanceado.
+- remove(cliente) : Esta funcion toma el ID del cliente que se desea borrar y lo elimina del árbol. Cabe aclarar que para su uso correcto dentro de *main.cpp* es necesario la creación de un "Dummy" que hará de objeto cliente, con datos preestablecidos pero con un ID otorgado por el usuario para que la funcion *remove()* tome en cuenta ese ID.
+
+## Clase "*HashTable.h*"
+
+Esta clase e susada para lacenar de manera rapida los paquetes de acuerdo a su codigo de rastreo (TrackingCode). Lo que hace es convertir su código en un indice de acuerdo a la division del código/tamañoTabla, y asigna su lugar en un vector con su índice.
+
+- HashTable(*int size*) : Su constrcutor, rquiere de un entero que determine el tamaño de la tabla.
+- hashFunction(*packkage*) : Esta función toma el trackingCode del paquete nviado y lo convierte en su key, luego devuelve un indice el cual depende del sobrante de *key/tamañoTabla*.
+- insert(*package*) : Esta función es usada para insertar algun paquete en la tabla Hash, determina un indice mediante la funcion hasFucntion(*paqueteEnviado*) y de acuerdo al indice lo inserta en el vector de listas.
+- remove(*int trackingCode*) : Esta funcion requiere de un TrackingCode que tilizara para borrar de la tabla Hash el ID del paquete con ese TrackingCode.
+- display( ) : Esta funcion mostrará toda la tabla Hash hasta el momento, con los índices que tienen datos y los que no tienen.
+
+En el caso de esta tabla Hash, si en algun caso se diera el hecho de que dos TrackingCode tuvieran el mismo index, se acumularan en el mismo, siendo mostrados ambos al momento de usar *display( )*.
+
+## Main.cpp
+
+Esta es la compilación de todas las clases creadas. Ya se ha explkicado previamente el funcionamiento de cada clase, por lo que aqui solo explicare el funcionamiento de la interfaz de *Main.cpp* y algunas funciones que fueron colocadas aqui mismo, como el ordenamiento.
